@@ -61,7 +61,7 @@ Contient les adaptateurs permettant l'interconnexion HDMI → VGA :
 ## 🖼️ Adaptation par Héritage
 | Résultat d'exécution |
 |---|
-|![](./captures/execution_result_adapterByHeritage.png)|
+|![](./captures/adapterByHeritage.png)|
 
 ---
 
