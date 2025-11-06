@@ -7,8 +7,8 @@ public class UniteCentrale {
         this.vga = vga;
     }
     public void print(String text) {
-        System.out.println("+++++++ Computer +++++++");
-        vga.print(text.toUpperCase());
-        System.out.println("+++++++ /Computer +++++++");
+        System.out.println("........ Computer ........");
+        vga.print(text);
+        System.out.println("........ /Computer ........");
     }
 }

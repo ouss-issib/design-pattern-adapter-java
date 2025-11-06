@@ -1,8 +1,7 @@
 package ouss.issib;
 
-import ouss.issib.computer.Tv;
-import ouss.issib.computer.UniteCentrale;
-import ouss.issib.computer.VideoProjctor;
+import ouss.issib.adapter.HdmiVgaAdapter;
+import ouss.issib.computer.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -12,5 +11,11 @@ public class Main {
 
         uc.setVga(new VideoProjctor());
         uc.print("Hello From Video Projector");
+        System.out.println();
+        HdmiVgaAdapter hdmiVgaAdapter =  new HdmiVgaAdapter();
+        hdmiVgaAdapter.setHdmi(new Monitor());
+        uc.setVga(hdmiVgaAdapter);
+        uc.print("Hello From HDMI");
+
     }
 }
